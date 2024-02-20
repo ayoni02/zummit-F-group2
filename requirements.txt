@@ -1,4 +1,4 @@
 transformers
 streamlit
-TensorFlow
-PyTorch
+tensorflow
+torch
