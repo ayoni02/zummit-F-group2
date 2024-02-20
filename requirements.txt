@@ -1,4 +1,4 @@
 transformers
 streamlit
-tensorflow
+//tensorflow
 torch
