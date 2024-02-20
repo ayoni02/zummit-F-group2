@@ -11,7 +11,10 @@ def classify(text):
 
 def main():
     text = st.text_input("Enter the text to classify: ") #input("Enter the text to classify: ")
-    results = classify(text)
-    st.write(results)
+    if text:
+        results = classify(text)
+        st.write(results)
+    else:
+        st.write("Please enter some text to classify")
     
 main()
