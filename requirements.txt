@@ -1,2 +1,3 @@
 transformers
 streamlit
+TensorFlow 2.0
