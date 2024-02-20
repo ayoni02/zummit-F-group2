@@ -6,10 +6,12 @@ classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnl
 
 def classify(text):    
     labels = ["POSITIVE", "NEGATIVE", "NEUTRAL"]
-    result = classifier(text, labels)
-    return result
+    run_pipe = classifier(text, labels)
+    return run_pipe
 
-if __name__ == "__main__":
+def main():
     text = st.text_input("Enter the text to classify: ") #input("Enter the text to classify: ")
-    result = classify(text)
-    st.write(result)
+    results = classify(text)
+    st.write(results)
+    
+main()
