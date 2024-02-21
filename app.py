@@ -1,7 +1,7 @@
 from transformers  import pipeline
 import streamlit as st
 
-
+st.write("welcome")
 #classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
 
