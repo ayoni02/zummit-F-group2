@@ -8,7 +8,7 @@ st.write(res)
 
 def main():
     text = st.text_input("Enter the text to classify: ") #input("Enter the text to classify: ")
-    labels = ["POSITIVE", "NEGATIVE", "NEUTRAL"]
+    #labels = ["POSITIVE", "NEGATIVE", "NEUTRAL"]
     if text:
         #results = classifier(text)
         st.write("great")
