@@ -4,7 +4,7 @@ from functions import classify
 
 st.write("welcome")
 #classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-res = classify("i am a good boy", ["POSITIVE", "NEGATIVE", "NEUTRAL"])
+res = classify("i am a good boy")
 st.write(res)
 
 def main():
