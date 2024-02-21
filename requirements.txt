@@ -1,3 +1,4 @@
+pip
 transformers
 streamlit
 torch
