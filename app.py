@@ -12,7 +12,7 @@ def main():
     #labels = ["POSITIVE", "NEGATIVE", "NEUTRAL"]
     if text:
         results = classify(text)
-        st.write(results)
+        st.write_stream(results)
     else:
         st.write("Please enter some text to classify")
     
