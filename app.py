@@ -8,7 +8,7 @@ st.write("welcome")
 #st.write(res)
 
 @st.cache_data
-def rata():
+def rata(txt):
     # Fetch data from URL here, and then clean it up.
     classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
     return classifier
