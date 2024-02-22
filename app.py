@@ -4,8 +4,8 @@ from functions import classify
 
 st.write("welcome")
 #classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
-res = classify("i am a good boy")
-st.write(res)
+#res = classify("i am a good boy")
+#st.write(res)
 
 def main():
     text = st.text_input("Enter the text to classify: ") #input("Enter the text to classify: ")
