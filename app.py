@@ -1,4 +1,4 @@
-#from transformers  import pipeline
+from transformers  import pipeline
 import streamlit as st
 #from functions import classify
 
