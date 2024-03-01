@@ -15,13 +15,13 @@ classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnl
 
 def main():
     text = st.text_input("Enter the text to classify: ")  # input("Enter the text to classify: ")
-    labels = ["TOXIC", "AGGRESSIVE", "HATE SPEECH", "INSULTIVE", "SPAM", "NSFW", "SEXUAL HARASSMENT", "NEUTRAL"]
+    labels = ["TOXIC", "AGGRESSIVE", "HATE SPEECH", "INSULTIVE", "SPAM", "NSFW", "SEXUAL HARASSMENT", "NEUTRAL", "POSITIVE"]
     if text:
         results = classifier(text, labels)
         # st.write(results['sequence'])
         st.write(results['labels'][:3])
         st.write(results['scores'][:3])
-        if results['labels'][0] != "NEUTRAL":
+        if results['labels'][0] != ("NEUTRAL" or "POSITIVE"):
             st.write(f"This post is considered {results['labels'][0]}, please review you words.")
     else:
         st.write("Please enter some text to classify")
