@@ -19,8 +19,8 @@ def main():
     if text:
         results = classifier(text, labels)
         # st.write(results['sequence'])
-        st.write(results['labels'][:3])
-        st.write(results['scores'][:3])
+        st.write(results['labels'][0])
+        st.write(results['scores'][0]*100)
         if results['labels'][0] != ("NEUTRAL" or "POSITIVE"):
             st.write(f"This post is considered {results['labels'][0]}, please review you words.")
     else:
